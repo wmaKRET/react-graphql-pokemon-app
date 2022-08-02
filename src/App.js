@@ -1,5 +1,5 @@
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client"
-import Header from "./components/Header"
+import Header from "./components/header/Header"
 import PokemonsContainer from "./components/PokemonsContainer"
 import "./app.css"
 
