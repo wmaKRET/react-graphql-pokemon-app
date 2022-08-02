@@ -91,7 +91,7 @@
 }
 
 .type-rock {
-    background-color: gray;
+    background-color: darkgoldenrod;
 }
 
 .type-ghost {
@@ -100,4 +100,16 @@
 
 .type-dragon {
     background-color: rebeccapurple;
+}
+
+.type-dark {
+    background-color: saddlebrown;
+}
+
+.type-steel {
+    background-color: gray;
+}
+
+.type-fairy {
+    background-color: pink;
 }

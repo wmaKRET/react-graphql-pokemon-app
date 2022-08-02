@@ -6,12 +6,10 @@ import "./pokemons.css"
 const PokemonsContainer = () => {
     const POKEMONS_QUERY = gql`
         {
-            pokemons(first: 9) {
+            pokemons(first: 151) {
                 number,
                 name,
                 types,
-                resistant,
-                weaknesses,
                 image
             }
         }

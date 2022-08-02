@@ -1,5 +1,4 @@
 const Pokemon = ({ pokemon }) => {
-  console.log(pokemon)
   return (
     <div className="card">
       <div className="card__picture">
