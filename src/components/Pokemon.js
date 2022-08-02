@@ -1,7 +1,8 @@
-const Pokemon = ({ name }) => {
+const Pokemon = ({ pokemon }) => {
+  console.log(pokemon)
   return (
     <div className="pokemon">
-        <h2>{name}</h2>
+        <h2>{pokemon.name}</h2>
     </div>
   )
 }

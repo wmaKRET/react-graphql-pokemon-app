@@ -10,7 +10,7 @@ const App = () => {
   return (
     <ApolloProvider client={client}>
       <div>
-        <h1>My PokeDex</h1>
+        <h1>Pokedex</h1>
         <PokemonsContainer />
       </div>
     </ApolloProvider>

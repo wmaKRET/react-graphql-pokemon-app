@@ -5,9 +5,13 @@ import Pokemon from "./Pokemon"
 const PokemonsContainer = () => {
     const POKEMONS_QUERY = gql`
         {
-            pokemons(first: 9) {
+            pokemons(first: 3) {
                 number,
-                name
+                name,
+                types,
+                resistant,
+                weaknesses,
+                image
             }
         }
     `
@@ -20,7 +24,7 @@ const PokemonsContainer = () => {
     const { pokemons } = data
 
     const pokemonElements = pokemons.map(pokemon => (
-        <Pokemon key={pokemon.number} name={pokemon.name} />
+        <Pokemon key={pokemon.number} pokemon={pokemon} />
     ))
 
     return (
