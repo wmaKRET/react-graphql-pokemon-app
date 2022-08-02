@@ -1,8 +1,103 @@
 .container {
     width: 90%;
-    margin: 60px auto;
+    margin: 100px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
+}
+
+.card {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card__picture {
+    overflow: hidden;
+}
+
+.card__image {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0.5em;
+}
+
+.card__name {
+    margin: auto 0 0 0;
+    cursor: default;
+}
+
+.card__types {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.card__types > p {
+    padding: 0.2em 0.5em;
+    color: white;
+    border-radius: 2em;
+}
+
+.type-normal {
+    background-color: darkkhaki;
+}
+
+.type-fire {
+    background-color: orange;
+}
+
+.type-water {
+    background-color: blue;
+}
+
+.type-grass {
+    background-color: green;
+}
+
+.type-electric {
+    background-color: yellow;
+}
+
+.type-ice {
+    background-color: cyan;
+}
+
+.type-fighting {
+    background-color: red;
+}
+
+.type-poison {
+    background-color: darkorchid;
+}
+
+.type-ground {
+    background-color: sandybrown;
+}
+
+.type-flying {
+    background-color: plum;
+}
+
+.type-psychic {
+    background-color: violet;
+}
+
+.type-bug {
+    background-color: yellowgreen;
+}
+
+.type-rock {
+    background-color: gray;
+}
+
+.type-ghost {
+    background-color: darkslateblue;
+}
+
+.type-dragon {
+    background-color: rebeccapurple;
 }
