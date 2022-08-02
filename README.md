@@ -6,4 +6,4 @@ Basic Pokemon App for training purposes :)
 
 ### Technologies
 
-The whole App is built in React. This is the first time when I use GraphQL and use React class components instead of functional ones.
+The whole App is built in React. This is the first time when I use GraphQL.
