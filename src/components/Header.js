@@ -1,8 +1,10 @@
+import "./header.css"
+
 const Header = () => {
   return (
-    <header>
-        <h1>Pokedex</h1>
-        <a href="https://github.com/wmaKRET">GitHub</a>
+    <header className="header">
+        <h1 className="header__title">Pokedex</h1>
+        <a className="header__link" href="https://github.com/wmaKRET">GitHub</a>
     </header>
   )
 }

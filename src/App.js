@@ -1,5 +1,7 @@
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client"
+import Header from "./components/Header"
 import PokemonsContainer from "./components/PokemonsContainer"
+import "./app.css"
 
 const App = () => {
   const client = new ApolloClient({
@@ -9,8 +11,8 @@ const App = () => {
 
   return (
     <ApolloProvider client={client}>
+      <Header />
       <div>
-        <h1>Pokedex</h1>
         <PokemonsContainer />
       </div>
     </ApolloProvider>
