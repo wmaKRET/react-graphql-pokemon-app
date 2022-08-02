@@ -1,11 +1,12 @@
 import React from "react"
 import { useQuery, gql } from "@apollo/client"
 import Pokemon from "./Pokemon"
+import "./pokemons.css"
 
 const PokemonsContainer = () => {
     const POKEMONS_QUERY = gql`
         {
-            pokemons(first: 3) {
+            pokemons(first: 9) {
                 number,
                 name,
                 types,
