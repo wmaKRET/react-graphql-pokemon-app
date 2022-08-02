@@ -7,6 +7,11 @@
     font-family: 'Mouse Memoirs', sans-serif;
 }
 
+body {
+    background-color: rgb(46, 40, 40);
+}
+
 a {
     text-decoration: none;
 }
+
