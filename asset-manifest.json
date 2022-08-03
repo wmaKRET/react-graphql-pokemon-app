@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-graphql-pokemon-app/static/css/main.d7a4e3e4.css",
+    "main.js": "/react-graphql-pokemon-app/static/js/main.5ff0f0e4.js",
+    "index.html": "/react-graphql-pokemon-app/index.html",
+    "main.d7a4e3e4.css.map": "/react-graphql-pokemon-app/static/css/main.d7a4e3e4.css.map",
+    "main.5ff0f0e4.js.map": "/react-graphql-pokemon-app/static/js/main.5ff0f0e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7a4e3e4.css",
+    "static/js/main.5ff0f0e4.js"
+  ]
+}
