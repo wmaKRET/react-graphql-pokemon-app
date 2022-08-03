@@ -3,7 +3,7 @@ import { useQuery, gql } from "@apollo/client"
 import Pokemon from "./Pokemon"
 import "./pokemons.css"
 
-const PokemonsContainer = () => {
+const PokemonsContainer = ({ activeFilter }) => {
     const POKEMONS_QUERY = gql`
         {
             pokemons(first: 151) {
@@ -22,9 +22,11 @@ const PokemonsContainer = () => {
 
     const { pokemons } = data
 
-    const pokemonElements = pokemons.map(pokemon => (
-        <Pokemon key={pokemon.number} pokemon={pokemon} />
-    ))
+    console.log(pokemons)
+
+    const pokemonElements = pokemons
+        .filter(pokemon => pokemon.types.includes(activeFilter === "All" ? pokemon.types[0] : activeFilter))
+        .map(pokemon => (<Pokemon key={pokemon.number} pokemon={pokemon} activeFilter={activeFilter} />))
 
     return (
         <div className="container">
