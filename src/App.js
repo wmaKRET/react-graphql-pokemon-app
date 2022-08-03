@@ -9,9 +9,11 @@ const App = () => {
     cache: new InMemoryCache()
   })
 
+  const pokemonTypes = [ "All", "Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"]
+
   return (
     <ApolloProvider client={client}>
-      <Header />
+      <Header pokemonTypes={pokemonTypes}/>
       <div>
         <PokemonsContainer />
       </div>

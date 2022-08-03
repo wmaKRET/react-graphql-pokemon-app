@@ -1,0 +1,71 @@
+.type-normal {
+    background-color: darkkhaki;
+}
+
+.type-fire {
+    background-color: orange;
+}
+
+.type-water {
+    background-color: blue;
+}
+
+.type-grass {
+    background-color: green;
+}
+
+.type-electric {
+    background-color: yellow;
+}
+
+.type-ice {
+    background-color: cyan;
+}
+
+.type-fighting {
+    background-color: red;
+}
+
+.type-poison {
+    background-color: darkorchid;
+}
+
+.type-ground {
+    background-color: sandybrown;
+}
+
+.type-flying {
+    background-color: plum;
+}
+
+.type-psychic {
+    background-color: violet;
+}
+
+.type-bug {
+    background-color: yellowgreen;
+}
+
+.type-rock {
+    background-color: darkgoldenrod;
+}
+
+.type-ghost {
+    background-color: darkslateblue;
+}
+
+.type-dragon {
+    background-color: rebeccapurple;
+}
+
+.type-dark {
+    background-color: saddlebrown;
+}
+
+.type-steel {
+    background-color: gray;
+}
+
+.type-fairy {
+    background-color: pink;
+}
