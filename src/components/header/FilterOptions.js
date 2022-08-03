@@ -1,10 +1,11 @@
 import "../pokemonTypes.css"
 
-const FilterOptions = ({ pokemonTypes }) => {
+const FilterOptions = ({ pokemonTypes, changeFilter }) => {
     const filterElements = pokemonTypes.map((type, i) => (
         <button
             key={i}
             className={`header__filters-btn type-${type.toLowerCase()}`}
+            onClick={() => changeFilter(type)}
         >
             {type}
         </button>

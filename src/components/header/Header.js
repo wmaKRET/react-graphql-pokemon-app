@@ -2,7 +2,7 @@ import { useState } from "react"
 import FilterOptions from "./FilterOptions"
 import "./header.css"
 
-const Header = ({ pokemonTypes }) => {
+const Header = ({ pokemonTypes, changeFilter }) => {
   const [isMenuVisible, setIsMenuVisible] = useState(false)
 
   return (
@@ -17,7 +17,7 @@ const Header = ({ pokemonTypes }) => {
         </button>
         <a className="header__link" href="https://github.com/wmaKRET" target="_blank" rel="noreferrer">GitHub</a>
       </div>
-      {isMenuVisible && <FilterOptions pokemonTypes={pokemonTypes}/>}
+      {isMenuVisible && <FilterOptions pokemonTypes={pokemonTypes} changeFilter={changeFilter}/>}
     </header>
   )
 }
