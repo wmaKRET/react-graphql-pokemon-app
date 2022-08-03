@@ -9,7 +9,7 @@ const Header = ({ pokemonTypes, changeFilter }) => {
     <header className="header">
       <div className="header__menu">
         <p className="header__title">Pokedex</p>
-        <button 
+        <button
           className="header__btn"
           onClick={() => setIsMenuVisible(prevState => !prevState)}
         >
@@ -17,7 +17,7 @@ const Header = ({ pokemonTypes, changeFilter }) => {
         </button>
         <a className="header__link" href="https://github.com/wmaKRET" target="_blank" rel="noreferrer">GitHub</a>
       </div>
-      {isMenuVisible && <FilterOptions pokemonTypes={pokemonTypes} changeFilter={changeFilter}/>}
+      {isMenuVisible && <FilterOptions pokemonTypes={pokemonTypes} changeFilter={changeFilter} />}
     </header>
   )
 }

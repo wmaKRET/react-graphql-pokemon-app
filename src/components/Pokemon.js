@@ -10,7 +10,7 @@ const Pokemon = ({ pokemon }) => {
           alt={pokemon.name}
         />
       </div>
-      <h2 className="card__name">{pokemon.name}</h2>
+      <h2 className="card__name">#{pokemon.number} {pokemon.name}</h2>
       <div className="card__types">
         {pokemon.types.map((type, i) => (
           <p className={`type-${type.toLowerCase()}`} key={i}>{type}</p>

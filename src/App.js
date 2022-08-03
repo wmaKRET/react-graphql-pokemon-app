@@ -14,13 +14,13 @@ const App = () => {
 
   const changeFilter = (filter) => setActiveFilter(filter)
 
-  const pokemonTypes = [ "All", "Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"]
+  const pokemonTypes = ["All", "Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"]
 
   return (
     <ApolloProvider client={client}>
-      <Header pokemonTypes={pokemonTypes} changeFilter={changeFilter}/>
+      <Header pokemonTypes={pokemonTypes} changeFilter={changeFilter} />
       <div>
-        <PokemonsContainer activeFilter={activeFilter}/>
+        <PokemonsContainer activeFilter={activeFilter} />
       </div>
     </ApolloProvider>
   )

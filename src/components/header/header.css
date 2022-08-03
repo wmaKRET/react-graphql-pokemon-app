@@ -14,7 +14,9 @@
     background-color: rgb(197, 59, 59);
 }
 
-.header__title, .header__link, .header__btn {
+.header__title,
+.header__link,
+.header__btn {
     margin: auto 0.5em 0.2em 0.5em;
     color: white;
     font-size: 1.5rem;
@@ -27,11 +29,13 @@
     cursor: pointer;
 }
 
-.header__link, .header__btn {
+.header__link,
+.header__btn {
     transition: all 0.3s ease-out;
 }
 
-.header__link:hover, .header__btn:hover {
+.header__link:hover,
+.header__btn:hover {
     letter-spacing: 0.3rem;
 }
 

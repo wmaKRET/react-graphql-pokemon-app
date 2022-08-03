@@ -17,12 +17,10 @@ const PokemonsContainer = ({ activeFilter }) => {
 
     const { data, loading, error } = useQuery(POKEMONS_QUERY)
 
-    if (loading) return "Loading..."
-    if (error) return <pre>{error.message}</pre>
+    if (loading) return <div className="container">Loading...</div>
+    if (error) return <div className="container"><pre>{error.message}</pre></div>
 
     const { pokemons } = data
-
-    console.log(pokemons)
 
     const pokemonElements = pokemons
         .filter(pokemon => pokemon.types.includes(activeFilter === "All" ? pokemon.types[0] : activeFilter))
